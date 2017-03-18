@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+    
+    <link rel="stylesheet" type="text/css" href="css/new_file.css"/>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+   <nav class="navbar navbar-inverse navbar-fixed-top aaa" role="navigation" >
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"> Prometheus</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav navbar-right main-nav">
+            <li><a href="/docs/introduction/overview/">Docs</a></li>
+            <li><a href="/download/">Download</a></li>
+            <li><a href="/community/">Community</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="https://github.com/prometheus"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://twitter.com/PrometheusIO"><i class="fa fa-twitter"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  	<div class="main yang">
+  		
+  			<div class="container">
+    <h1>From metrics to insight</h1>
+    <p class="subtitle">Power your metrics and alerting with a leading<br>open-source monitoring solution.</p>
+    <p class="zi1">
+      <a class="btn btn-default btn-lg" href="/docs/introduction/getting_started/" role="button" style="background: #bf4425; border-color:#bf4425 ;">Get Started</a>
+      <a class="btn btn-default btn-lg" href="/download" role="button" style="background: #bf4425; border-color:#bf4425 ;">Download</a>
+    </p>
+  </div>
+  			
+  		
+  	</div>
+  	<div class="main1">
+  		<div class="container">
+  		<div class="newsbar hehe">
+  <a href="http://events.linuxfoundation.org/events/cloudnativecon-and-kubecon-europe">CloudNativeCon Europe 2017</a> (March 29–30) with a dedicated <a href="https://cloudnativeeu2017.sched.com/overview/type/Prometheus">Prometheus track</a>.
+</div>
+  		</div>
+  	</div>
+  	
+  	<div class="container">
+  <div class="row">
+    <div class="col-md-3 col-sm-6 col-xs-12 feature-item">
+      <a href="/docs/concepts/data_model/">
+        <h2><i class="fa fa-flask"></i> Dimensional data</h2>
+        <p>Prometheus implements a highly dimensional data model. Time series are identified by a metric name and a set of key-value pairs.</p>
+      </a>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-12 feature-item">
+      <a href="/docs/querying/basics/">
+        <h2><i class="fa fa-search"></i> Powerful queries</h2>
+        <p>A flexible query language allows slicing and dicing of collected time series data in order to generate ad-hoc graphs, tables, and alerts.</p>
+      </a>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-12 feature-item">
+      <a href="/docs/visualization/grafana/">
+        <h2><i class="fa fa-line-chart"></i> Great visualization</h2>
+        <p>Prometheus has multiple modes for visualizing data: a built-in expression browser, Grafana integration, and a console template language.</p>
+      </a>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-12 feature-item">
+      <a href="/docs/operating/storage/">
+        <h2><i class="fa fa-database"></i> Efficient storage</h2>
+        <p>Prometheus stores time series in memory and on local disk in an efficient custom format. Scaling is achieved by functional sharding and federation.</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3 col-sm-6 col-xs-12 feature-item">
+      <a href="/docs/operating/configuration/">
+        <h2><i class="fa fa-cog"></i> Simple operation</h2>
+        <p>Each server is independent for reliability, relying only on local storage. Written in Go, all binaries are statically linked and easy to deploy.</p>
+      </a>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-12 feature-item">
+      <a href="/docs/alerting/rules/">
+        <h2><i class="fa fa-warning"></i> Precise alerting</h2>
+        <p>Alerts are defined based on Prometheus's flexible query language and maintain dimensional information. An alertmanager handles notifications and silencing.</p>
+      </a>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-12 feature-item">
+      <a href="/docs/instrumenting/clientlibs/">
+        <h2><i class="fa fa-code"></i> Many client libraries</h2>
+        <p>Client libraries allow easy instrumentation of services. Over ten languages are supported already and custom libraries are easy to implement.</p>
+      </a>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-12 feature-item">
+      <a href="/docs/instrumenting/exporters/">
+        <h2><i class="fa fa-cloud-upload"></i> Many integrations</h2>
+        <p>Existing exporters allow bridging of third-party data into Prometheus. Examples: system statistics, as well as Docker, HAProxy, StatsD, and JMX metrics. </p>
+      </a>
+    </div>
+  </div>
+
+  <div class="row top-hr">
+    <div class="col-md-12">
+      <hr>
+    </div>
+  </div>
+
+  <div class="row quote">
+    <div class="col-md-12">
+      <p class="quote-text">
+        «Even though Borgmon remains internal to Google, the idea of treating time-series data as a data source for generating alerts is now accessible to everyone through those open source tools like Prometheus [...]»
+      </p>
+      <p class="quote-source">
+      — <a href="http://shop.oreilly.com/product/0636920041528.do"><b>Site Reliability Engineering:</b> How Google Runs Production Systems</a> (O'Reilly Media)
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <hr>
+    </div>
+  </div>
+
+  <div class="row open-source">
+    <div class="col-md-12">
+      <h1><i class="fa fa-github"></i> Open Source</h1>
+      <p>Prometheus is 100% open source and community-driven. All components are available under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2 License</a> on <a href="https://github.com/prometheus">GitHub</a>.</p>
+      
+      <iframe src="https://ghbtns.com/github-btn.html?user=prometheus&amp;repo=prometheus&amp;type=star&amp;count=true&amp;size=large" frameborder="0" scrolling="0" class="github-stars"></iframe>
+      <br><br>
+      <p>We are a <a href="https://cncf.io/">Cloud Native Computing Foundation</a> member project.</p>
+      <br>
+      <p><a href="https://cncf.io/"><img src="assets/cncf_logo-cb5db80876e.png" style="margin-left: 20px;"></a></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <hr>
+    </div>
+  </div>
+
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-12 trusted-by">Some of our users include:</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-2 col-sm-4 col-xs-6 logos">
+     <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <a href="http://www.mavensecurities.com/"><img src="img/images/11115_06.png"></a>
+    </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6 logos">
+   <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <a href="http://www.mavensecurities.com/"><img src="img/images/11115_06.png"></a>
+    </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <a href="http://www.mavensecurities.com/"><img src="img/images/11115_06.png"></a>
+    </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6 logos">
+     <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <a href="http://www.mavensecurities.com/"><img src="img/images/11115_06.png"></a>
+    </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6 logos">
+     <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <a href="http://www.mavensecurities.com/"><img src="img/images/11115_06.png"></a>
+    </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <a href="http://www.mavensecurities.com/"><img src="img/images/11115_06.png"></a>
+    </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <a href="http://www.mavensecurities.com/"><img src="img/images/11115_06.png"></a>
+    </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <a href="http://www.mavensecurities.com/"><img src="img/images/11115_06.png"></a>
+    </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6 logos">
+     <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <a href="http://www.mavensecurities.com/"><img src="img/images/11115_06.png"></a>
+    </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <a href="http://www.mavensecurities.com/"><img src="img/images/11115_06.png"></a>
+    </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6 logos">
+     <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <a href="http://www.mavensecurities.com/"><img src="img/images/11115_06.png"></a>
+    </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <a href="http://www.mavensecurities.com/"><img src="img/images/11115_06.png"></a>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <a href="http://www.mavensecurities.com/"><img src="img/images/11115_06.png"></a>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6 logos">
+     <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <a href="http://www.mavensecurities.com/"><img src="img/images/11115_06.png"></a>
+    </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <a href="http://www.mavensecurities.com/"><img src="img/images/11115_06.png"></a>
+    </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <a href="http://www.mavensecurities.com/"><img src="img/images/11115_06.png"></a>
+    </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6 logos">
+     <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <a href="http://www.mavensecurities.com/"><img src="img/images/11115_06.png"></a>
+    </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <a href="http://www.mavensecurities.com/"><img src="img/images/11115_06.png"></a>
+    </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6 logos">
+     <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <a href="http://www.mavensecurities.com/"><img src="img/images/11115_06.png"></a>
+    </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <a href="http://www.mavensecurities.com/"><img src="img/images/11115_06.png"></a>
+    </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6 logos">
+     <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <a href="http://www.mavensecurities.com/"><img src="img/images/11115_06.png"></a>
+    </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <a href="http://www.mavensecurities.com/"><img src="img/images/11115_06.png"></a>
+    </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <a href="http://www.mavensecurities.com/"><img src="img/images/11115_06.png"></a>
+    </div>a>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <div class="col-md-2 col-sm-4 col-xs-6 logos">
+      <a href="http://www.mavensecurities.com/"><img src="img/images/11115_06.png"></a>
+    </div>
+    </div>
+  </div>
+
+  <hr>
+
+<footer>
+  <p class="pull-left">
+    © Prometheus Authors 2016
+  </p>
+</footer>
+
+</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
